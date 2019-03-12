@@ -8,6 +8,8 @@
 
 import ObjectMapper
 
+//MARK:Param
+
 
 //MARK:Response
 public class MovieResponse: Mappable {
