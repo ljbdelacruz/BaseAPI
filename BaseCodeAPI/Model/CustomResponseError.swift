@@ -10,28 +10,23 @@ import Foundation
 import RxSwift
 import ObjectMapper
 
-class CustomAPIError: Mappable {
-    
-    var statusCode: Int!
-    var error: String!
-    
-    func content() -> String {
+public class CustomAPIError: Mappable {
+    public var statusCode: Int!
+    public var error: String!
+    public func content() -> String {
         return "";
     }
-    init() {
+    public init() {
     }
-    required init?(map: Map) {
+    public required init?(map: Map) {
     }
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         statusCode <- map["statusCode"]
         error <- map["error"]
     }
-    
 }
-
 extension CustomAPIError: Swift.Error, LocalizedError {
-    
-    var errorDescription: String? {
+    public var errorDescription: String? {
         return content()
     }
     

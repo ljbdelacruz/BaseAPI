@@ -17,6 +17,8 @@
 		EEB5C1832238000600CE7087 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1822238000600CE7087 /* UserRepository.swift */; };
 		EEB5C1852238029900CE7087 /* ObservableTypes+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1842238029900CE7087 /* ObservableTypes+.swift */; };
 		EEB5C187223802B100CE7087 /* CustomResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C186223802B100CE7087 /* CustomResponseError.swift */; };
+		EEB5C18922380BF700CE7087 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C18822380BF700CE7087 /* MovieRepository.swift */; };
+		EEB5C18C22380C4300CE7087 /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C18B22380C4300CE7087 /* MovieObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EEB5C1822238000600CE7087 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		EEB5C1842238029900CE7087 /* ObservableTypes+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableTypes+.swift"; sourceTree = "<group>"; };
 		EEB5C186223802B100CE7087 /* CustomResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResponseError.swift; sourceTree = "<group>"; };
+		EEB5C18822380BF700CE7087 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		EEB5C18B22380C4300CE7087 /* MovieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			children = (
 				EEB5C1752237F7B300CE7087 /* LoginObjects.swift */,
 				EEB5C186223802B100CE7087 /* CustomResponseError.swift */,
+				EEB5C18B22380C4300CE7087 /* MovieObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB5C1822238000600CE7087 /* UserRepository.swift */,
+				EEB5C18822380BF700CE7087 /* MovieRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -274,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB5C187223802B100CE7087 /* CustomResponseError.swift in Sources */,
+				EEB5C18C22380C4300CE7087 /* MovieObject.swift in Sources */,
 				EEB5C17C2237FD6D00CE7087 /* StringEncryptor.swift in Sources */,
+				EEB5C18922380BF700CE7087 /* MovieRepository.swift in Sources */,
 				EEB5C1782237FCB900CE7087 /* API.swift in Sources */,
 				EEB5C1852238029900CE7087 /* ObservableTypes+.swift in Sources */,
 				EEB5C1832238000600CE7087 /* UserRepository.swift in Sources */,

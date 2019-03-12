@@ -9,7 +9,7 @@
 import Foundation
 
 public class Constants{
-    public static var baseURL:String="";
+    public static var baseURL:String="http://localhost:8080";
     public static var jwot:String="";
     public static var jwot_pass:String="";
     public static var refreshToken:String="";

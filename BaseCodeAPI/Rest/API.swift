@@ -17,6 +17,9 @@ public class MyAPI: MoyaProvider<APIService> {
 }
 enum APIService  {
     case Authenticate(param:LoginParam);
+    //movieAPI
+    case allMovieWithLimit(limit:Int)
+    
 }
 extension APIService: TargetType {
     var baseURL: URL {
@@ -27,12 +30,16 @@ extension APIService: TargetType {
         switch self {
             case .Authenticate(let param):
                 return "/login";
+            case .allMovieWithLimit(let limit):
+                return "vstream/movies/\(limit)"
         }
     }
     var method: Moya.Method {
         switch self {
         case .Authenticate:
             return .post;
+        case .allMovieWithLimit:
+            return .get;
         }
     }
     
@@ -42,7 +49,9 @@ extension APIService: TargetType {
     
     var task: Task {
         switch self {
-            case .Authenticate:
+            case .Authenticate,
+                 //movies
+                 .allMovieWithLimit:
                 return .requestPlain;
         }
     }
@@ -52,7 +61,9 @@ extension APIService: TargetType {
     }
     var headers: [String: String]? {
         switch self {
-        case .Authenticate:
+        case .Authenticate,
+             //movies
+             .allMovieWithLimit:
             return ["Content-Type": "application/json"]
         }
     }

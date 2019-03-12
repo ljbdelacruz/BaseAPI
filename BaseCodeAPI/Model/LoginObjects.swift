@@ -6,6 +6,8 @@
 //  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
 //
 import ObjectMapper
+
+//MARK: Param
 public class LoginParam: Mappable {
     struct defaultValues {
         static let grantType = "password"
@@ -34,6 +36,7 @@ public class LoginParam: Mappable {
         return (true, "");
     }
 }
+//MARK: Response
 
 public class LoginResponse: Mappable {
     public var accessToken: String?
