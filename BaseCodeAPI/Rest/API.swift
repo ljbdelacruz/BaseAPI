@@ -19,6 +19,8 @@ enum APIService  {
     case Authenticate(param:LoginParam);
     //movieAPI
     case allMovieWithLimit(limit:Int)
+    case getMovieInfo(id:Int)
+    case getMovieSearchByTitle(title:String, limit:Int)
     
 }
 extension APIService: TargetType {
@@ -32,13 +34,17 @@ extension APIService: TargetType {
                 return "/login";
             case .allMovieWithLimit(let limit):
                 return "vstream/movies/\(limit)"
+            case .getMovieInfo(let param):
+                return "vstream/movie/detail/\(param)";
+            case .getMovieSearchByTitle(let title, let limit):
+                return "vstream/movies/\(title)/\(limit)";
         }
     }
     var method: Moya.Method {
         switch self {
         case .Authenticate:
             return .post;
-        case .allMovieWithLimit:
+        case .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
             return .get;
         }
     }
@@ -51,7 +57,7 @@ extension APIService: TargetType {
         switch self {
             case .Authenticate,
                  //movies
-                 .allMovieWithLimit:
+                 .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
                 return .requestPlain;
         }
     }
@@ -63,7 +69,7 @@ extension APIService: TargetType {
         switch self {
         case .Authenticate,
              //movies
-             .allMovieWithLimit:
+             .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
             return ["Content-Type": "application/json"]
         }
     }
