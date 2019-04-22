@@ -70,11 +70,31 @@ extension APIService: TargetType {
         case .Authenticate,
              //movies
              .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
-            return ["Content-Type": "application/json"]
+            return getHeader(headerUsageType: .basic1)
         }
     }
-    
-    
+}
+
+extension APIService{
+    //implement header modification here this will get executed before sending the request to server
+    func getHeader(headerUsageType:HeaderUsageType)->[String: String]{
+        var authorization:String="";
+        switch headerUsageType {
+            case .basic1:
+                authorization="";
+            case .basic2:
+                authorization="";
+            case .clientGrant:
+                authorization="";
+            case .passwordGrant:
+                authorization="";
+        }
+        return ["Accept": "application/json",
+                "Authorization": authorization,
+                "X-Device-Id": Constants.deviceID,
+                "X-Device-Notification-id": Constants.fcmToken,
+                "Content-Type": "application/json"]
+    }
 }
 
 

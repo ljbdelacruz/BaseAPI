@@ -13,4 +13,16 @@ public class Constants{
     public static var jwot:String="";
     public static var jwot_pass:String="";
     public static var refreshToken:String="";
+    
+    
+    public static var deviceID:String="";
+    public static var fcmToken:String="";
+    
+    
+    
+    
+    public static func SetEnvironment(connEnv:ConnectionEnvironment){
+        self.baseURL=connEnv.getURL();
+    }
+    
 }

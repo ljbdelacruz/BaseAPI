@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A8752B8703C5656CD121200 /* Pods_BaseCodeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DAAB7734F9B84455AE9CC /* Pods_BaseCodeAPI.framework */; };
+		EEAE3E5D226DF60300D8170D /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */; };
+		EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */; };
 		EEB5C16C2237F78C00CE7087 /* BaseCodeAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB5C16A2237F78C00CE7087 /* BaseCodeAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB5C1762237F7B300CE7087 /* LoginObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1752237F7B300CE7087 /* LoginObjects.swift */; };
 		EEB5C1782237FCB900CE7087 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1772237FCB900CE7087 /* API.swift */; };
@@ -27,6 +29,8 @@
 		411A2E91D8FF8E05B316351D /* Pods-BaseCodeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseCodeAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseCodeAPI/Pods-BaseCodeAPI.release.xcconfig"; sourceTree = "<group>"; };
 		9ECF0D1EDFCAF9BAC7EA6C00 /* Pods-BaseCodeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseCodeAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseCodeAPI/Pods-BaseCodeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		DD8DAAB7734F9B84455AE9CC /* Pods_BaseCodeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseCodeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUsageType.swift; sourceTree = "<group>"; };
 		EEB5C1672237F78C00CE7087 /* BaseCodeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseCodeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB5C16A2237F78C00CE7087 /* BaseCodeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCodeAPI.h; sourceTree = "<group>"; };
 		EEB5C16B2237F78C00CE7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EEAE3E5B226DF5F400D8170D /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */,
+				EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
 		EEB5C15D2237F78C00CE7087 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		EEB5C1692237F78C00CE7087 /* BaseCodeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3E5B226DF5F400D8170D /* enum */,
 				EEB5C19022380EF900CE7087 /* README.md */,
 				EEB5C18D22380D0A00CE7087 /* DependencyInject */,
 				EEB5C17F2237FF7700CE7087 /* extension */,
@@ -300,7 +314,9 @@
 				EEB5C17C2237FD6D00CE7087 /* StringEncryptor.swift in Sources */,
 				EEB5C18922380BF700CE7087 /* MovieRepository.swift in Sources */,
 				EEB5C1782237FCB900CE7087 /* API.swift in Sources */,
+				EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */,
 				EEB5C1852238029900CE7087 /* ObservableTypes+.swift in Sources */,
+				EEAE3E5D226DF60300D8170D /* NetworkEnvironment.swift in Sources */,
 				EEB5C1832238000600CE7087 /* UserRepository.swift in Sources */,
 				EEB5C1812237FF8300CE7087 /* String+.swift in Sources */,
 				EEB5C1762237F7B300CE7087 /* LoginObjects.swift in Sources */,
@@ -447,6 +463,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BaseCodeAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +492,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BaseCodeAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
