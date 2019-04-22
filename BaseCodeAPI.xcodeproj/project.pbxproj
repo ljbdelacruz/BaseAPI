@@ -11,6 +11,8 @@
 		EEAE3E5D226DF60300D8170D /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */; };
 		EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */; };
 		EEAE3E61226DF8E400D8170D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E60226DF8E400D8170D /* README.md */; };
+		EEAE3E63226DFA9C00D8170D /* ErrorCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E62226DFA9C00D8170D /* ErrorCatcher.swift */; };
+		EEAE3E65226DFBF400D8170D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E64226DFBF400D8170D /* APIError.swift */; };
 		EEB5C16C2237F78C00CE7087 /* BaseCodeAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB5C16A2237F78C00CE7087 /* BaseCodeAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB5C1762237F7B300CE7087 /* LoginObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1752237F7B300CE7087 /* LoginObjects.swift */; };
 		EEB5C1782237FCB900CE7087 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C1772237FCB900CE7087 /* API.swift */; };
@@ -33,6 +35,8 @@
 		EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
 		EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUsageType.swift; sourceTree = "<group>"; };
 		EEAE3E60226DF8E400D8170D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EEAE3E62226DFA9C00D8170D /* ErrorCatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCatcher.swift; sourceTree = "<group>"; };
+		EEAE3E64226DFBF400D8170D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		EEB5C1672237F78C00CE7087 /* BaseCodeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseCodeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB5C16A2237F78C00CE7087 /* BaseCodeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCodeAPI.h; sourceTree = "<group>"; };
 		EEB5C16B2237F78C00CE7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				EEB5C1752237F7B300CE7087 /* LoginObjects.swift */,
 				EEB5C186223802B100CE7087 /* CustomResponseError.swift */,
 				EEB5C18B22380C4300CE7087 /* MovieObject.swift */,
+				EEAE3E62226DFA9C00D8170D /* ErrorCatcher.swift */,
+				EEAE3E64226DFBF400D8170D /* APIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,9 +326,11 @@
 				EEB5C1782237FCB900CE7087 /* API.swift in Sources */,
 				EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */,
 				EEB5C1852238029900CE7087 /* ObservableTypes+.swift in Sources */,
+				EEAE3E65226DFBF400D8170D /* APIError.swift in Sources */,
 				EEAE3E5D226DF60300D8170D /* NetworkEnvironment.swift in Sources */,
 				EEB5C1832238000600CE7087 /* UserRepository.swift in Sources */,
 				EEB5C1812237FF8300CE7087 /* String+.swift in Sources */,
+				EEAE3E63226DFA9C00D8170D /* ErrorCatcher.swift in Sources */,
 				EEB5C1762237F7B300CE7087 /* LoginObjects.swift in Sources */,
 				EEB5C17E2237FE2500CE7087 /* Constants.swift in Sources */,
 			);

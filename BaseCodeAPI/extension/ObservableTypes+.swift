@@ -8,12 +8,24 @@
 
 import Moya
 import RxSwift
+
+
 extension ObservableType where E == Response {
     func mapErrors(provider: MyAPI) -> Observable<E> {
-        //getting refresh token token
-        //        var refreshTokenRequest: Observable<Response>?
+        
+        
         return self.filterSuccessfulStatusCodes()
             .catchError { e in
+                guard let error = e as? MoyaError else {
+                    throw e
+                }
+                guard case .statusCode(let response) = error else {
+                    throw e
+                }
+                if let apiError = try? response.mapObject(APIError.self) {
+                    Constants.errorCatcher.statusCode=apiError.statusCode;
+                    Constants.errorCatcher.errorMessage=apiError.error;
+                }
                 throw e;
         }
         
