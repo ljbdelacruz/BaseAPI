@@ -12,10 +12,13 @@ public class ErrorCatcher{
     public var statusCode:Int=0;
     public var errorMessage:String="";
     public init(){}
-    convenience init(scode:Int, errMessage:String){
+    public convenience init(scode:Int, errMessage:String){
         self.init();
         self.statusCode=scode;
         self.errorMessage=errMessage;
     }
-    
+    public func empty(){
+        self.statusCode=0;
+        self.errorMessage="";
+    }
 }
