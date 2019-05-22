@@ -20,9 +20,8 @@ extension ObservableType where E == Response {
                 guard case .statusCode(let response) = error else {
                     throw e
                 }
-                if let apiError = try? response.mapObject(APIError.self) {
-                    Constants.errorCatcher.statusCode=apiError.statusCode;
-                    Constants.errorCatcher.errorMessage=apiError.error;
+                if let apiError = try? response.mapObject(CustomAPIError.self) {
+                    print(response.statusCode);
                 }
                 throw e;
         }

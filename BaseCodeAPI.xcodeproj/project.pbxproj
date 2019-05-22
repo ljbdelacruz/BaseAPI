@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410755822950A7B00BE0F51 /* ErrorCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410755722950A7B00BE0F51 /* ErrorCodeHandler.swift */; };
 		2A8752B8703C5656CD121200 /* Pods_BaseCodeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DAAB7734F9B84455AE9CC /* Pods_BaseCodeAPI.framework */; };
 		EEAE3E5D226DF60300D8170D /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5C226DF60300D8170D /* NetworkEnvironment.swift */; };
 		EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E5E226DF75600D8170D /* HeaderUsageType.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0410755722950A7B00BE0F51 /* ErrorCodeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCodeHandler.swift; sourceTree = "<group>"; };
 		411A2E91D8FF8E05B316351D /* Pods-BaseCodeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseCodeAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseCodeAPI/Pods-BaseCodeAPI.release.xcconfig"; sourceTree = "<group>"; };
 		9ECF0D1EDFCAF9BAC7EA6C00 /* Pods-BaseCodeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseCodeAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseCodeAPI/Pods-BaseCodeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		DD8DAAB7734F9B84455AE9CC /* Pods_BaseCodeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseCodeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410755622950A5F00BE0F51 /* middleware */ = {
+			isa = PBXGroup;
+			children = (
+				0410755722950A7B00BE0F51 /* ErrorCodeHandler.swift */,
+			);
+			path = middleware;
+			sourceTree = "<group>";
+		};
 		29937C4AB0EF0AC7B1C2AA4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		EEB5C1692237F78C00CE7087 /* BaseCodeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0410755622950A5F00BE0F51 /* middleware */,
 				EEAE3E5B226DF5F400D8170D /* enum */,
 				EEB5C19022380EF900CE7087 /* README.md */,
 				EEB5C18D22380D0A00CE7087 /* DependencyInject */,
@@ -322,6 +333,7 @@
 				EEB5C18F22380D2000CE7087 /* DataAssembler.swift in Sources */,
 				EEB5C18C22380C4300CE7087 /* MovieObject.swift in Sources */,
 				EEB5C17C2237FD6D00CE7087 /* StringEncryptor.swift in Sources */,
+				0410755822950A7B00BE0F51 /* ErrorCodeHandler.swift in Sources */,
 				EEB5C18922380BF700CE7087 /* MovieRepository.swift in Sources */,
 				EEB5C1782237FCB900CE7087 /* API.swift in Sources */,
 				EEAE3E5F226DF75600D8170D /* HeaderUsageType.swift in Sources */,
