@@ -20,7 +20,7 @@ public class DataAssembly: Assembly {
                 r.resolve(NetworkLoggerPlugin.self)!])
             return service
         }
-        container.autoregister(UserRepository.self, initializer: UserRepository.init).inObjectScope(.container)
+        container.autoregister(CategoryRepository.self, initializer: CategoryRepository.init).inObjectScope(.container)
     }
 }
 

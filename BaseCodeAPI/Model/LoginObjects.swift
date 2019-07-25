@@ -37,12 +37,11 @@ public class LoginParam: Mappable {
     }
 }
 //MARK: Response
-
 public class LoginResponse: Mappable {
     public var accessToken: String?
     public required init?(map: Map) {
     }
-    public func mapping(map: Map) {
+    public func mapping(map: Map){
         accessToken <- map["access_token"]
     }
 }

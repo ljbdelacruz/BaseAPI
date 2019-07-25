@@ -16,12 +16,10 @@ public class MyAPI: MoyaProvider<APIService> {
     }
 }
 enum APIService  {
-    case Authenticate(param:LoginParam);
-    //movieAPI
-    case allMovieWithLimit(limit:Int)
-    case getMovieInfo(id:Int)
-    case getMovieSearchByTitle(title:String, limit:Int)
-    
+    //category
+    case getCategoryByID(id:String)
+    case getCategoryListByParentID(id:String)
+    case newCategory(body:CategoryModel)
 }
 extension APIService: TargetType {
     var baseURL: URL {
@@ -30,21 +28,19 @@ extension APIService: TargetType {
     }
     var path: String {
         switch self {
-            case .Authenticate(let param):
-                return "/login";
-            case .allMovieWithLimit(let limit):
-                return "vstream/movies/\(limit)"
-            case .getMovieInfo(let param):
-                return "vstream/movie/detail/\(param)";
-            case .getMovieSearchByTitle(let title, let limit):
-                return "vstream/movies/\(title)/\(limit)";
+            case .getCategoryByID(let id):
+                return "/category/"+id;
+            case .getCategoryListByParentID(let id):
+                return "/category/list/all/"+id
+            case .newCategory:
+                return "/category/new"
         }
     }
     var method: Moya.Method {
         switch self {
-        case .Authenticate:
+        case .newCategory:
             return .post;
-        case .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
+        case .getCategoryByID, .getCategoryListByParentID:
             return .get;
         }
     }
@@ -55,10 +51,10 @@ extension APIService: TargetType {
     
     var task: Task {
         switch self {
-            case .Authenticate,
-                 //movies
-                 .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
+            case .getCategoryByID, .getCategoryListByParentID:
                 return .requestPlain;
+            case .newCategory(let body):
+                return .requestParameters(parameters: body.toJSON(), encoding: URLEncoding(destination: .queryString))
         }
     }
     // MARK - Header
@@ -67,9 +63,7 @@ extension APIService: TargetType {
     }
     var headers: [String: String]? {
         switch self {
-        case .Authenticate,
-             //movies
-             .allMovieWithLimit, .getMovieInfo, .getMovieSearchByTitle:
+        case .newCategory, .getCategoryByID, .getCategoryListByParentID:
             return getHeader(headerUsageType: .basic1)
         }
     }
@@ -78,22 +72,14 @@ extension APIService: TargetType {
 extension APIService{
     //implement header modification here this will get executed before sending the request to server
     func getHeader(headerUsageType:HeaderUsageType)->[String: String]{
-        var authorization:String="";
         switch headerUsageType {
             case .basic1:
-                authorization="";
-            case .basic2:
-                authorization="";
-            case .clientGrant:
-                authorization="";
-            case .passwordGrant:
-                authorization="";
+                return ["Accept": "application/json",
+                        "Content-Type": "application/x-www-form-urlencoded"]
+            default:
+                return ["Accept": "application/json",
+                        "Content-Type": "application/json"]
         }
-        return ["Accept": "application/json",
-                "Authorization": authorization,
-                "X-Device-Id": Constants.deviceID,
-                "X-Device-Notification-id": Constants.fcmToken,
-                "Content-Type": "application/json"]
     }
 }
 
