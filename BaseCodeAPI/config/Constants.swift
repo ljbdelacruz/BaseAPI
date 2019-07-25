@@ -9,7 +9,7 @@
 import Foundation
 
 public class Constants{
-    public static var baseURL:String="http://localhost:8080";
+    public static var baseURL:String="http://192.168.88.23:8080/";
     public static var jwot:String="";
     public static var jwot_pass:String="";
     public static var refreshToken:String="";
@@ -17,9 +17,6 @@ public class Constants{
     
     public static var deviceID:String="";
     public static var fcmToken:String="";
-    
-    
-    
     
     public static func SetEnvironment(connEnv:ConnectionEnvironment){
         self.baseURL=connEnv.getURL();

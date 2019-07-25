@@ -9,7 +9,6 @@
 import Alamofire
 import Moya
 import ObjectMapper
-import Firebase
 
 public class MyAPI: MoyaProvider<APIService> {
     init(plugins: [PluginType] = []) {
@@ -63,8 +62,10 @@ extension APIService: TargetType {
     }
     var headers: [String: String]? {
         switch self {
-        case .newCategory, .getCategoryByID, .getCategoryListByParentID:
+        case .newCategory, .getCategoryByID:
             return getHeader(headerUsageType: .basic1)
+        case .getCategoryListByParentID:
+            return getHeader(headerUsageType: .basic2)
         }
     }
 }

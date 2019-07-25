@@ -17,11 +17,11 @@ public enum ConnectionEnvironment{
     func getURL()->String{
         switch self{
         case .dev:
-            return "";
+            return "http://192.168.88.23:8080/";
         case .prerelease:
-            return "";
+            return "http://192.168.88.23:8080/";
         case .prod:
-            return "";
+            return "http://192.168.88.23:8080/";
         }
     }
 }

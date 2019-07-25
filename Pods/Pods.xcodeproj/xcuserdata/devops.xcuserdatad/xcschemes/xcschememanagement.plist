@@ -6,113 +6,270 @@
 	<dict>
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>FirebaseCore.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>FirebaseInstanceID.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>FirebaseMessaging.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>GoogleUtilities.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Moya-ObjectMapper.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>Moya.xcscheme_^#shared#^_</key>
-		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Moya.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>ObjectMapper.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Pods-BaseCodeAPI.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Protobuf.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Realm.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>11</integer>
 		</dict>
 		<key>RealmSwift.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>12</integer>
 		</dict>
 		<key>Result.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 		<key>RxRealm.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>14</integer>
 		</dict>
 		<key>RxSwift.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>15</integer>
 		</dict>
 		<key>SwiftEventBus.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>16</integer>
 		</dict>
 		<key>SwiftKeychainWrapper.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>17</integer>
 		</dict>
 		<key>SwiftyRSA.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Swinject.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>19</integer>
 		</dict>
 		<key>SwinjectAutoregistration.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>SwinjectStoryboard.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>21</integer>
 		</dict>
 		<key>nanopb.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>012D63EC1DB1E518BA8C0DA2A6926ECA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>228AC747F35D90DB801C9E05C7BCDDE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2636AD9DB2CB53EB594A90B05C4B8FC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>307B2A4808107F77CFE961B2AB9AAAB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33E33F6AD2FB7E0163597B38C155AC87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DEE490EDD29DD19135F71C401613C51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>447CC94694FE12D70C10479AEB92CC2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>643DA76AD0386BAF4C64428E829C3B97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65ADCC5AFB5118CDAC58A2138230D89A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79BBCF9AE349B13FB916C28363B7D900</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8364BB258018143B83798DE31C13546D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84047B17C2FB3A1B5AD09A5C397DF47D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86A46DBAF2E0C5CC33A6E8630176E21A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D816D1DA12211B823CDE7C0859F4C31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DE026C74B4D224BFE3EBA3DA9FC7754</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A28F35D5FC031C9DDBAEF7907883DBE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABA0F3572EA9C1C16CD27B383D26844E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D10207D88F517A9DFF3F1F38FFBF0F86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E76458C58C9140B6A16D60547E68E80C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7C36265F0830930C2306D45979A92AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2584DF028E9A105246C869257707D15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF90821EFA855100CD3BC5CA9401D6AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
