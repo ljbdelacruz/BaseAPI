@@ -53,7 +53,7 @@ extension APIService: TargetType {
             case .getCategoryByID, .getCategoryListByParentID:
                 return .requestPlain;
             case .newCategory(let body):
-                return .requestParameters(parameters: body.toJSON(), encoding: URLEncoding(destination: .queryString))
+                return .requestParameters(parameters: body.mcToJSON(), encoding: JSONEncoding.default)
         }
     }
     // MARK - Header
@@ -76,7 +76,7 @@ extension APIService{
         switch headerUsageType {
             case .basic1:
                 return ["Accept": "application/json",
-                        "Content-Type": "application/x-www-form-urlencoded"]
+                        "Content-Type": "application/json"]
             default:
                 return ["Accept": "application/json",
                         "Content-Type": "application/json"]

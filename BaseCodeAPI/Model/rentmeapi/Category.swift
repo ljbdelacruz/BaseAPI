@@ -19,5 +19,13 @@ public class CategoryModel: Mappable {
         name <- map["name"]
         parent <- map["parent"]
     }
+    //pass this api when sending body post
+    public func mcToJSON()->Dictionary<String, Any>{
+        var dict=Dictionary<String, Any>();
+        dict["id"]=self.id;
+        dict["parent"]=self.parent;
+        dict["name"]=self.name;
+        return dict;
+    }
     
 }
