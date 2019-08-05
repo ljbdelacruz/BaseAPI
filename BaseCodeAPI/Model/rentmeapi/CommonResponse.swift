@@ -16,6 +16,5 @@ public class CommonResponse: Mappable {
     public func mapping(map: Map) {
         statusCode <- map["statusCode"]
         description <- map["description"]
-    }
-    
+    }    
 }

@@ -28,8 +28,6 @@ public class CategoryModel: Mappable {
         return dict;
     }
 }
-
-
 extension CategoryModel{
     static func filterByName(list:[CategoryModel], search:String)->[CategoryModel]{
         return list.filter({$0.name!.contains(search)});
