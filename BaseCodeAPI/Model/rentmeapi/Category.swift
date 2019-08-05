@@ -27,5 +27,17 @@ public class CategoryModel: Mappable {
         dict["name"]=self.name;
         return dict;
     }
-    
+}
+
+
+extension CategoryModel{
+    static func filterByName(list:[CategoryModel], search:String)->[CategoryModel]{
+        return list.filter({$0.name!.contains(search)});
+    }
+    static func fetchByID(id:Int, list:[CategoryModel])->CategoryModel{
+        return list.filter({$0.id! == id})[0];
+    }
+    static func fetchByCategoryID(id:String, list:[CategoryModel])->[CategoryModel]{
+        return list.filter({$0.parent!.elementsEqual(id)});
+    }
 }
