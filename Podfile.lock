@@ -15,7 +15,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - FirebaseAnalyticsInterop (1.2.0)
   - FirebaseCore (5.3.1):
@@ -36,7 +36,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - GoogleUtilities/AppDelegateSwizzler (5.3.7):
     - GoogleUtilities/Environment
@@ -49,9 +49,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/Network (5.3.7):
     - GoogleUtilities/Logger
-    - GoogleUtilities/NSData+zlib
+    - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - GoogleUtilities/NSData+zlib (5.3.7)
+  - "GoogleUtilities/NSData+zlib (5.3.7)"
   - GoogleUtilities/Reachability (5.3.7):
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.7):
@@ -115,6 +115,33 @@ DEPENDENCIES:
   - SwinjectAutoregistration (~> 2.5.1)
   - SwinjectStoryboard (~> 2.1.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - Moya
+    - Moya-ObjectMapper
+    - nanopb
+    - ObjectMapper
+    - Protobuf
+    - Realm
+    - RealmSwift
+    - Result
+    - RxRealm
+    - RxSwift
+    - SwiftKeychainWrapper
+    - SwiftyRSA
+    - Swinject
+    - SwinjectAutoregistration
+    - SwinjectStoryboard
+
 EXTERNAL SOURCES:
   SwiftEventBus:
     :git: https://github.com/cesarferreira/SwiftEventBus.git
@@ -151,6 +178,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 0c7f1c32eadd2cfcac5b29d3c2c4c1a373b1425e
+PODFILE CHECKSUM: e49c066e8e2aafdb3502634fafc314de100bc472
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
