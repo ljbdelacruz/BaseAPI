@@ -10,8 +10,8 @@ import Moya
 import RxSwift
 
 
-extension ObservableType where E == Response {
-    func mapErrors(provider: MyAPI) -> Observable<E> {
+public extension ObservableType where E == Response {
+    public func mapErrors(provider: MyAPI) -> Observable<E> {
         return self.filterSuccessfulStatusCodes()
             .catchError { e in
                 guard let error = e as? MoyaError else {
@@ -27,5 +27,6 @@ extension ObservableType where E == Response {
         }
         
     }
+    
 }
 
